@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Baby Shower de Samantha</title>
+  <style>
+    body {
+      background-color: #fce4ec;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 20px;
+      color: #7a4e67;
+    }
+
+    .invitation {
+      background: #fff0f5;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .invitation img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .event-details {
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    .event-details h2 {
+      color: #d81b60;
+    }
+
+    .gift-registry {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .gift-box {
+      margin-top: 20px;
+      animation: bounce 1.5s infinite;
+      width: 100px;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    .gift-box:hover {
+      transform: scale(1.1);
+    }
+
+    .gift-text {
+      margin-top: 8px;
+      font-weight: bold;
+      color: #d81b60;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="invitation">
+    <img src="SAMANTHA-2.png" alt="Samantha's Baby Shower Invitation" />
+    <div class="event-details">
+      <h2>Baby Shower</h2>
+      <p>Saturday, August 8, 2025, 1:00 PM (ET)</p>
+      <p>Hosted by: Lismar & Miguel</p>
+      <p>We are more than happy to see you there</p>
+      <p>Contact: (786) 555-5044</p>
+    </div>
+    <div class="calendar-links" style="margin-top: 25px;">
+  <h3 style="color: #d81b60;">Add to your calendar</h3>
+  <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Baby+Shower+de+Samantha&dates=20250808T170000Z/20250808T190000Z&details=Hosted+by+Lismar+and+Miguel.+Contact%3A+(786)+555-5044&location=&sf=true&output=xml" target="_blank" style="margin: 5px; display: inline-block; color: white; background-color: #d81b60; padding: 10px 20px; border-radius: 8px;">Google Calendar</a>
+
+  <a href="ics/BabyShower.ics" download style="margin: 5px; display: inline-block; color: white; background-color: #7a4e67; padding: 10px 20px; border-radius: 8px;">Download .ICS (Apple / Outlook)</a>
+</div>
+
+    <div class="gift-registry">
+      <a href="https://my.babylist.com/beautifulsammy" target="_blank">
+        <div class="gift-box">
+          <!-- SVG Gift Box Icon -->
+          <svg width="100" height="100" viewBox="0 0 64 64" fill="#ec407a" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 22h60v8H2z" fill="#f8bbd0"/>
+            <path d="M2 30h60v32H2z" fill="#f48fb1"/>
+            <path d="M32 30v32" stroke="#fff" stroke-width="4"/>
+            <path d="M18 18c0-6 7-10 14-4 7-6 14-2 14 4s-7 8-14 2c-7 6-14 2-14-2z" fill="#f06292"/>
+          </svg>
+          <div class="gift-text">Lismar & Miguel's Gift Registry</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
