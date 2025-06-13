@@ -5,6 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Baby Shower de Samantha</title>
   <style>
+    .floating-gift {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+      }
+      
+      .floating-gift .gift-text {
+        margin-top: 4px;
+        font-size: 12px;
+        color: #d81b60;
+      }
+      
+      .floating-gift svg {
+        width: 60px;
+        height: 60px;
+        animation: bounce 2s infinite;
+      }
     body {
       background-color: #fce4ec;
       font-family: 'Segoe UI', sans-serif;
@@ -72,10 +94,10 @@
 </head>
 <body>
   <div class="invitation">
-    <img src="SAMANTHA-2.png" alt="Samantha's Baby Shower Invitation" />
+    <img src="SAMANTHA4.png" alt="Samantha's Baby Shower Invitation" />
     <div class="event-details">
       <h2>Baby Shower</h2>
-      <p>Saturday, August 8, 2025, 1:00 PM (ET)</p>
+      <p>August 2, 2025, 11:00 AM (ET)</p>
       <p>Hosted by: Lismar & Miguel</p>
       <p>We are more than happy to see you there</p>
       <p>Contact: (786) 555-5044</p>
@@ -87,10 +109,9 @@
   <a href="ics/BabyShower.ics" download style="margin: 5px; display: inline-block; color: white; background-color: #7a4e67; padding: 10px 20px; border-radius: 8px;">Download .ICS (Apple / Outlook)</a>
 </div>
 
-    <div class="gift-registry">
+    <!-- <div class="gift-registry">
       <a href="https://my.babylist.com/beautifulsammy" target="_blank">
         <div class="gift-box">
-          <!-- SVG Gift Box Icon -->
           <svg width="100" height="100" viewBox="0 0 64 64" fill="#ec407a" xmlns="http://www.w3.org/2000/svg">
             <path d="M2 22h60v8H2z" fill="#f8bbd0"/>
             <path d="M2 30h60v32H2z" fill="#f48fb1"/>
@@ -100,7 +121,16 @@
           <div class="gift-text">Lismar & Miguel's Gift Registry</div>
         </div>
       </a>
-    </div>
+    </div> -->
+    <a href="https://my.babylist.com/beautifulsammy" target="_blank" class="floating-gift">
+        <svg viewBox="0 0 64 64" fill="#ec407a" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 22h60v8H2z" fill="#f8bbd0"/>
+          <path d="M2 30h60v32H2z" fill="#f48fb1"/>
+          <path d="M32 30v32" stroke="#fff" stroke-width="4"/>
+          <path d="M18 18c0-6 7-10 14-4 7-6 14-2 14 4s-7 8-14 2c-7 6-14 2-14-2z" fill="#f06292"/>
+        </svg>
+        <div class="gift-text">Lismar & Miguel's Gift Registry</div>
+      </a>
   </div>
 </body>
 </html>
